@@ -1,25 +1,19 @@
-public class QuicksortBL
-{
-	// ALGORITMO DE ORDENAMIENTO POR QUICKSORT DEL LIBRO DE BARBARA LISKOV
-	// "PROGRAM DEVELOPMENT IN JAVA"
-	private static void llenararreglo(int[] a)
-	{
-       	for (int i=0; i<a.length; i++)
-       	{
+public class QuicksortBL {
+	// algoritmo de ordenamiento por quicksort del libro de barbara liskov
+	// "program development in java"
+	private static void llenararreglo(int[] a) {
+       	for (int i=0; i<a.length; i++) {
 			a[i]= (int)(Math.random()*a.length);
        	}
    	}
 
-	private static void imprimirarreglo(int []a)
-    {
-    	for (int i=0; i<a.length; i++)
-    	{
+	private static void imprimirarreglo(int []a) {
+    	for (int i=0; i<a.length; i++) {
         	System.out.print(a[i] + ", ");
 		}
     }
 	
-	public static void quicksort(int[] a,int izq, int der)
-	{
+	public static void quicksort(int[] a,int izq, int der) {
 		// REQUIRES:
 		// MODIFIES: a
 		// EFFECTS : 
@@ -29,8 +23,7 @@ public class QuicksortBL
 		quicksort(a,mid+1,der);
 	}
 
-	public static int partition(int[] a, int i, int j)
-	{
+	public static int partition(int[] a, int i, int j) {
 		// REQUIRES: 
 		// MODIFIES: a
 		// EFFECTS : 
@@ -51,8 +44,7 @@ public class QuicksortBL
 		}
 	}
 
-	public static void main (String[] args)
-	{
+	public static void main (String[] args) {
 		System.out.println("\nORDENAMIENTO POR QUICKSORT");        	
 		int N = Console.readInt("\nIntroduzca el tamaño del arreglo:");
 	    int[] a = new int[N];

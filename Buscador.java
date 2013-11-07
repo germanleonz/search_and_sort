@@ -34,19 +34,19 @@ public class Buscador {
         return esta;
     }
 
-	public boolean busquedaLineal(int []a, int e) {
-		boolean esta = false;
+    public boolean busquedaLineal(int []a, int e) {
+        boolean esta = false;
         int N        = a.length;
-		int k        = 0;
+        int k        = 0;
 
-		while (!esta && k < N) {
-			if (a[k] == e) {
-				esta = true;
-			}
-			k++;
-		}
-		return esta;
-	}
+        while (!esta && k < N) {
+            if (a[k] == e) {
+                esta = true;
+            }
+            k++;
+        }
+        return esta;
+    }
 
     public static void main(String[] args) {
         Buscador b = new Buscador();
